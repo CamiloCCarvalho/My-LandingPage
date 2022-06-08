@@ -1,0 +1,30 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma-rtl.min.css";
+
+body{
+    background: linear-gradient(45deg, rgb(67, 67, 67), rgb(81, 15, 73));
+    height: 110vh;
+}
+h1, h2, h3, p{
+    color:aliceblue
+}
+.photo-avatar{
+    margin: 12px;
+    max-width: 240px;
+    border-radius: 50%;
+    border: 2px solid purple;
+}
+.main-message{
+    padding:12px;
+    margin: auto;
+    margin-top: 24px;
+    border: 2px solid purple;
+    max-width: 960px;
+    height: 50%;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    background: linear-gradient(145deg, rgb(67, 67, 67), rgb(81, 15, 73));
+}
