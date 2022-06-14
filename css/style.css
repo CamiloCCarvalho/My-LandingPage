@@ -1,30 +1,71 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma-rtl.min.css";
 
+/**************************
+    colors in this project
+
+    #454545 - greyBackGround
+
+**************************/
+
+
+
 body{
-    background: linear-gradient(45deg, rgb(67, 67, 67), rgb(81, 15, 73));
-    height: 110vh;
+    width:100vw;
+    background-image: url(/rsc/bgdark.jfif);
+    background-size:100%;
+    background-repeat: repeat;
+    height: 100vh;
 }
 h1, h2, h3, p{
     color:aliceblue
 }
+.logo::first-letter{
+    font-size: 1.5rem;
+    color: rgb(199, 0, 239);
+}
+.logo{
+    text-align: center;
+    margin-left: 6px;
+}
 .photo-avatar{
     margin: 12px;
-    max-width: 240px;
+    max-width: 200px;
     border-radius: 50%;
-    border: 2px solid purple;
+    border: 2px solid #393939;
+    max-height: 200px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
 }
 .main-message{
     padding:12px;
     margin: auto;
     margin-top: 24px;
-    border: 2px solid purple;
-    max-width: 960px;
-    height: 50%;
+    width: 900px;
+    height: 80%;
     display: flex;
-    flex-flow: column wrap;
-    align-content: center;
-    justify-content: center;
+    flex-flow: row wrap;
+    align-content:center;
+    justify-content: left;
     text-align: center;
     font-weight: bold;
-    background: linear-gradient(145deg, rgb(67, 67, 67), rgb(81, 15, 73));
 }
+.name{
+    text-align: center;
+    padding: 25px;
+    font-weight: bold;
+    font-size: 26pt;
+}
+.description{
+    padding: 25px;
+    margin-left: 10px;
+    background: rgb(37, 37, 37);
+    border-radius: 12px;
+    width: 45%;
+    height: 400px;
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
