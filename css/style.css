@@ -93,7 +93,7 @@ h2::first-letter{
     margin:20px;
     height:160px;
     width:160px;
-    border-radius:50%;
+    border-radius:2%;
     border:1px solid silver;
     box-shadow:0 0 100px rgba(0, 0, 0, 0.3);
 }
