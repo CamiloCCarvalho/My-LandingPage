@@ -40,10 +40,10 @@
         </section>
         <section class="container">
             <div class="box">
-                <img class="logos" src="https://github.com/CamiloCCarvalho/developer/blob/main/rsc/css.png" alt="Logo ilustrativa de CSS 3">
-                <img class="logos" src="https://github.com/CamiloCCarvalho/developer/blob/main/rsc/html.png" alt="Logo ilustrativa de HTML 5">
-                <img class="logos" src="https://github.com/CamiloCCarvalho/developer/blob/main/rsc/js.png" alt="Logo ilustrativa de JS EcmaScript 6">
-                <img class="logos" src="https://github.com/CamiloCCarvalho/developer/blob/main/rsc/sass.png" alt="Logo ilustrativa de SASS">
+                <img class="logos" src="./rsc/css.jpg" alt="Logo ilustrativa de CSS 3">
+                <img class="logos" src="./rsc/html.png" alt="Logo ilustrativa de HTML 5">
+                <img class="logos" src="./rsc/js.png" alt="Logo ilustrativa de JS EcmaScript 6">
+                <img class="logos" src="./rsc/sass.png" alt="Logo ilustrativa de SASS">
             </div>
             <div class="box">
                 <h2>Tecnologias</h2>
@@ -92,10 +92,9 @@
             <p>Camilo Costa de Carvalho</p>
         </footer>
     </div>
-    
-    <script>
-        const btns = document.querySelectorAll('.social-btns button')
 
+    <script>
+const btns = document.querySelectorAll('.social-btns button')
 btns.forEach((item) => {
     item.addEventListener('mouseover', (evt)=> {
         const x = evt.layerX - 60
@@ -112,7 +111,6 @@ btns.forEach((item) => {
         i.style.transition = 'all .25s ease'
         bg.style.transform = `translate(${0}px, ${0}px)`
         i.style.transform = `translate(${0}px, ${0}px)`
-
         setTimeout(()=>{
             bg.style.transition = ''
             i.style.transition = ''
@@ -128,6 +126,9 @@ btns.forEach((item) => {
             i.style.transition = ''
         }, 150)
     })
+})
+btns.forEach((item) => {
+    const links = ['','','','']
 })
     </script>
 </body>
