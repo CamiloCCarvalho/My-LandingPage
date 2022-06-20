@@ -63,26 +63,35 @@
                     </div>
                     <div class="socialArea">
                         <div class="social-btns">
-                            <button>
-                                <div class="bg">
-                                    <i class="fa-brands fa-instagram"></i>
-                                </div>
-                            </button>
-                            <button>
-                                <div class="bg">
-                                    <i class="fa-brands fa-linkedin-in"></i>
-                                </div>
-                            </button>
-                            <button>
-                                <div class="bg">
-                                    <i class="fa-brands fa-github"></i>
-                                </div>
-                            </button>
-                            <button>
-                                <div class="bg">
-                                    <i class="fa-brands fa-facebook-f"></i>
-                                </div>
-                            </button>
+
+                            <a target="_blank" href="https://www.instagram.com/camiloc___">
+                                <button>
+                                    <div class="bg">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                </button>
+                            </a>
+                            <a target="_blank" href="www.linkedin.com/in/camilocostac">
+                                <button>
+                                    <div class="bg">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </div>
+                                </button>
+                            </a>
+                            <a target="_blank" href="https://github.com/CamiloCCarvalho">
+                                <button>
+                                    <div class="bg">
+                                        <i class="fa-brands fa-github"></i>
+                                    </div>
+                                </button>
+                            </a>
+                            <a target="_blank" href="https://www.facebook.com/camilo.carvalho.338658">
+                                <button>
+                                    <div class="bg">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </div>
+                                </button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -92,7 +101,6 @@
             <p>Camilo Costa de Carvalho</p>
         </footer>
     </div>
-
     <script>
 const btns = document.querySelectorAll('.social-btns button')
 btns.forEach((item) => {
@@ -126,14 +134,6 @@ btns.forEach((item) => {
             i.style.transition = ''
         }, 150)
     })
-})
-btns.forEach((item) =>{
-    const links = ['https://www.instagram.com/camiloc___','www.linkedin.com/in/camilocostac','https://github.com/CamiloCCarvalho','https://www.facebook.com/camilo.carvalho.338658']
-    for(let i=0; i<links.length; i++){
-        item[i].addEventlistener('onclick', (evt)=>{
-            window.location.href = links[i]
-        })
-    }
 })
     </script>
 </body>
