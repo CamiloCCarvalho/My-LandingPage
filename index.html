@@ -116,7 +116,7 @@ btns.forEach((item) => {
             i.style.transition = ''
         }, 250)
     })
-    item.addEventListener('mouseenter', (evt)=> {
+    item.addEventListener('mouseenter', (evt)=>{
         const bg = evt.target.querySelector('.bg')
         const i = evt.target.querySelector('i.fa-brands')
         bg.style.transition = 'all .25s ease'
@@ -127,8 +127,13 @@ btns.forEach((item) => {
         }, 150)
     })
 })
-btns.forEach((item) => {
-    const links = ['','','','']
+btns.forEach((item) =>{
+    const links = ['https://www.instagram.com/camiloc___','www.linkedin.com/in/camilocostac','https://github.com/CamiloCCarvalho','https://www.facebook.com/camilo.carvalho.338658']
+    for(let i=0; i<links.length; i++){
+        item[i].addEventlistener('onclick', (evt)=>{
+            window.location.href = links[i]
+        })
+    }
 })
     </script>
 </body>
