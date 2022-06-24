@@ -11,6 +11,10 @@ ul, li, a, h1, h2, h3, p, i, button, div, section .header, .footer {
     margin:0;
     padding:0;
 }
+h2::first-letter{
+    color:blueviolet;
+    font-size:17pt;
+}
 /*Mobile and small devices*/
 h1, h2, h3{
     font-size:14pt;
