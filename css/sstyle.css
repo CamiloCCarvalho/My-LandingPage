@@ -8,6 +8,25 @@ ul, li, a, h1, h2, h3, p, i, button, div, section .header, .footer {
     margin:0;
     padding:0;
 }
+/*Large Devices*/
+@media (min-width:601px){
+    section:nth-child(3){
+        height:auto;
+        min-height:500px;
+        background:rgba(0, 0, 0, .1);
+        flex-flow:row wrap;
+        justify-content:space-around;
+        align-items:center
+    }
+    section:nth-child(3) .box:nth-child(2){
+        width:40%;
+        min-height:300px;
+    }
+    .boxLogos{
+        width:40%;
+    }
+}
+/*Mobile and small devices*/
 @media (max-width:600px){
     h1, h2, h3{
         font-size:14pt;
@@ -28,6 +47,7 @@ ul, li, a, h1, h2, h3, p, i, button, div, section .header, .footer {
     }
     .footer{
         margin-bottom:0;
+        height:48px;
         display:flex;
         flex-flow:row wrap;
         justify-content:center;
@@ -55,7 +75,6 @@ ul, li, a, h1, h2, h3, p, i, button, div, section .header, .footer {
         justify-content:center;
         align-items:center;
         margin-top:24px;
-        border:2px solid black;
         padding:12px;
     }
     .container:nth-child(4){
@@ -70,13 +89,16 @@ ul, li, a, h1, h2, h3, p, i, button, div, section .header, .footer {
         align-items:center;
     }
     .social-btns{
-        border:2px solid rgb(49, 237, 6);
         width:80%;
         height:70%;
         display:flex;
         flex-flow:row wrap;
         justify-content:space-around;
         align-items:center;
+        border:2px stroke purple;
+        border-radius:12px;
+        box-shadow:0 0 100px rgba(83, 83, 83, 0.2);
+        background:linear-gradient(95deg, rgb(118, 1, 220), rgb(181, 0, 194));
     }
     .social-btns a{
         width:86px;
@@ -110,20 +132,27 @@ ul, li, a, h1, h2, h3, p, i, button, div, section .header, .footer {
         flex-flow:column wrap;
         justify-content:center;
         align-items:center;
-        border:2px solid red;
         margin-top:12px;
+        padding:12px;
+        border-radius:8px;
+        background:linear-gradient(45deg, rgb(251, 251, 251), rgb(242, 242, 242));
+        border:2px solid, silver;
     }
     .boxLogos{
         display:flex;
         flex-flow:row wrap;
         justify-content:center;
         align-items:center;
-        border:2px solid rgb(54, 253, 4);
         margin-top:12px;
+        border:2px stroke purple;
+        border-radius:12px;
+        box-shadow:0 0 100px rgba(83, 83, 83, 0.2);
+        background:linear-gradient(95deg, rgb(118, 1, 220), rgb(181, 0, 194));
 
     }
     .logos{
         margin:24px;
         width:30%;
+        filter:drop-shadow(0 16px 10px rgba(41, 41, 41, 0.695));
     }
 }
