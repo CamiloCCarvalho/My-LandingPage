@@ -157,6 +157,10 @@ button{
 }
 /*Desktop and Large Devices*/
 @media (min-width:600px){
+    h2::first-letter{
+        color:blueviolet;
+        font-size:17pt;
+    }
     section:nth-child(3){
         height:auto;
         min-height:500px;
