@@ -3,6 +3,8 @@ body{
     background:silver;
     margin:0;
     padding:0;
+    font-family:system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 ul, li, a, h1, h2, h3, p, i, button, div, section .header, .footer {
     text-decoration:none;
@@ -23,10 +25,21 @@ p{
     align-items:center;
     padding:12px;
     font-size:14pt;
+    border-radius:0 0 10% 10%;
     background:rgb(248, 248, 248);
     border-bottom:1px solid rgb(255, 255, 255);
     box-shadow:0px -15px 50px rgb(53, 53, 53);
 }
+.header a{
+    margin:8px;
+    font-size:12pt;
+    color:rgb(16, 16, 16);
+    font-weight:bold;
+}
+#home{
+    color:blueviolet;
+}
+
 .footer{
     margin-bottom:0;
     height:48px;
@@ -50,6 +63,7 @@ p{
 }
 .avatar{
     width:200px;
+    border-radius:4px;
 }
 .container{
     display:flex;
@@ -83,8 +97,8 @@ p{
     background:linear-gradient(95deg, rgb(118, 1, 220), rgb(181, 0, 194));
 }
 .social-btns a{
-    width:86px;
-    height:86px;
+    width:124px;
+    height:124px;
     display:flex;
     justify-content:center;
     align-items:center;
