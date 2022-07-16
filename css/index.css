@@ -176,4 +176,36 @@ button{
     .boxLogos{
         width:40%;
     }
+
+    i{
+        font-size:2.5rem;
+        transition:2s;
+    }
+
+    button{
+        width:120px;
+        height:120px;
+        position:relative;
+        border-radius:30%;
+        background:none;
+        border:none;
+        color:purple;
+        margin:10px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+
+    .bg{
+        width:80px;
+        height:80px;
+        border: 1px solid rgb(203, 203, 203);
+        border-radius:40%;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        background:radial-gradient(rgb(241, 241, 241), rgb(237, 206, 206));
+        filter:drop-shadow(0 0 5px rgba(255, 0, 195, 0.664));
+    }
+
 }
