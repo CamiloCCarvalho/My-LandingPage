@@ -1,36 +1,14 @@
 /* 
     Document Index:
-    0. Reset and set Configuration 
-    1. Layout for the page
+    0. Layout for the page
     
     Default All Devices: 
-    2. Header
-    3. Content
-    4. Footer
+    1. Content
 
     Specific:
-    5. Mobile/Small Devices
-    6. Desktop/large Devices 
+    2. Mobile/Small Devices
+    3. Desktop/large Devices 
 */
-
-
-/* 0- Reset Global-Default */
-body{
-    background:silver;
-    margin:0;
-    padding:0;
-    font-family:system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-ul, li, a, h1, h2, h3, p, i, button, div, section .header, .footer {
-    text-decoration:none;
-    margin:0;
-    padding:0;
-    list-style:none;
-}
-.contact-content h2{
-    color:rgb(236, 236, 236);
-}
 
 /* 1- Layout for the page */
 .screen-index{
@@ -39,35 +17,12 @@ ul, li, a, h1, h2, h3, p, i, button, div, section .header, .footer {
     height:100%;
     display:flex;
     flex-flow:column wrap;
-    background-image:linear-gradient(to right, rgb(195, 0, 255), rgb(111, 0, 255));
-    filter:brightness(90%);
+}
+.contact-content h2{
+    color:rgb(236, 236, 236);
 }
 
-/* 2- Header */
-.header{
-    padding:8px;
-    border-radius:0 0 10% 10%;
-    background-image:linear-gradient(to right, rgb(195, 0, 255), rgb(111, 0, 255));
-    border-bottom:1px solid rgb(166, 2, 255);
-    box-shadow:0px -15px 50px rgb(53, 53, 53);
-}
-.header-navbar{
-    width:100%;
-}
-.header-navbar--list{
-    display:flex;
-    flex-flow:row nowrap;
-    justify-content:center;
-    align-items:center;
-}
-.items{
-    padding:0 4px;
-}
-.nav-item{
-    color:rgb(237, 237, 237);
-}
-
-/* 3- Content */
+/* 2- Content */
 .container{
     display:flex;
     flex-flow:column wrap;
@@ -181,22 +136,7 @@ i{
     align-items:center;
 }
 
-
-/* 4- Footer*/
-.footer{
-    margin-bottom:0;
-    height:48px;
-    display:flex;
-    flex-flow:row wrap;
-    justify-content:center;
-    align-items:center;
-    background-image:linear-gradient(to right, rgb(195, 0, 255), rgb(111, 0, 255));
-    border-top:1px solid rgb(162, 0, 255);
-    box-shadow:0px 15px 50px rgb(53, 53, 53);
-    color:rgb(235, 235, 235)
-}
-
-/* 5- Mobile and small devices*/
+/* 3- Mobile and small devices*/
 @media(max-width:699px){
     h1::first-letter{
         font-size:17pt;
@@ -250,7 +190,7 @@ i{
     }
 }
 
-/* 6- Desktop and Large Devices*/
+/* 4- Desktop and Large Devices*/
 @media (min-width:700px){
     h2::first-letter{
         font-size:19pt;
