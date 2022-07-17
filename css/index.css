@@ -154,6 +154,18 @@ button{
     background:linear-gradient(95deg, rgb(118, 1, 220), rgb(181, 0, 194));
 
 }
+.stacks-content:nth-child(2){
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:center;
+    align-items:center;
+    margin-top:12px;
+    border:2px solid, silver;
+    border-radius:12px;
+    box-shadow:0 0 100px rgba(83, 83, 83, 0.2);
+    background:linear-gradient(45deg, rgb(251, 251, 251), rgb(242, 242, 242));
+
+}
 .stack{
     margin:24px;
     width:30%;
@@ -161,6 +173,12 @@ button{
 }
 section:nth-child(3){
 	background:rgba(0, 0, 0, .1);
+}
+.contact-content{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
 }
 i{
     transition:2s;
@@ -209,6 +227,9 @@ button{
     p{
         font-size:12pt;
     }
+    .contact-content{
+        height:90%;
+    }
     i{
         font-size:2.0rem;
     }
@@ -236,12 +257,16 @@ button{
         justify-content:space-around;
         align-items:center
     }
-    section:nth-child(3) .box:nth-child(2){
+    section:nth-child(3) .stacks-content:nth-child(2){
         width:40%;
         min-height:300px;
     }
     .stacks-content{
         width:40%;
+    }
+    .contact-content{
+        width:80%;
+        height:90%;
     }
     i{
         font-size:2.5rem;
