@@ -10,52 +10,13 @@ ul, li, a, h1, h2, h3, p, i, button, div, section .header, .footer {
     text-decoration:none;
     margin:0;
     padding:0;
+    list-style:none;
 }
-h2::first-letter{
-    color:blueviolet;
-    font-size:17pt;
-}
-/*Mobile and small devices*/
-h1, h2, h3{
-    font-size:14pt;
-}
-p{
-    font-size:12pt;
-}
-.header{
-    display:flex;
-    flex-flow:row wrap;
-    justify-content:center;
-    align-items:center;
-    padding:12px;
-    font-size:14pt;
-    border-radius:0 0 10% 10%;
-    background:rgb(248, 248, 248);
-    border-bottom:1px solid rgb(255, 255, 255);
-    box-shadow:0px -15px 50px rgb(53, 53, 53);
-}
-.header a{
-    margin:8px;
-    font-size:12pt;
-    color:rgb(16, 16, 16);
-    font-weight:bold;
-}
-#home{
+h1::first-letter,h2::first-letter{
     color:blueviolet;
 }
-
-.footer{
-    margin-bottom:0;
-    height:48px;
-    display:flex;
-    flex-flow:row wrap;
-    justify-content:center;
-    align-items:center;
-    background:rgb(248, 248, 248);
-    border-top:1px solid rgb(255, 255, 255);
-    box-shadow:0px 15px 50px rgb(53, 53, 53);
-}
-.main{
+/*Configuração da malha que engloba a pagina*/
+.screen-index{
     margin:0;
     width:100%;
     height:100%;
@@ -65,10 +26,30 @@ p{
     background-image:url(../rsc/background.jpg);
     filter:brightness(90%);
 }
-.avatar{
-    width:200px;
-    border-radius:4px;
+/*Cabeçalho*/
+.header{
+    padding:8px;
+    border-radius:0 0 10% 10%;
+    background:rgb(248, 248, 248);
+    border-bottom:1px solid rgb(255, 255, 255);
+    box-shadow:0px -15px 50px rgb(53, 53, 53);
 }
+.header-navbar{
+    width:100%;
+}
+.header-navbar--list{
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:center;
+    align-items:center;
+}
+.items{
+    padding:0 4px;
+}
+.nav-item{
+    color:rgb(18, 18, 18);
+}
+/*Conteudo da pagina*/
 .container{
     display:flex;
     flex-flow:column wrap;
@@ -76,6 +57,10 @@ p{
     align-items:center;
     margin-top:24px;
     padding:12px;
+}
+.avatar{
+    width:200px;
+    border-radius:4px;
 }
 .container:nth-child(4){
     height:400px;
@@ -155,11 +140,70 @@ button{
     width:30%;
     filter:drop-shadow(0 16px 10px rgba(41, 41, 41, 0.695));
 }
-/*Desktop and Large Devices*/
-@media (min-width:600px){
-    h2::first-letter{
-        color:blueviolet;
+button{
+    position:relative;
+    border-radius:30%;
+    background:none;
+    border:none;
+    color:purple;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.footer{
+    margin-bottom:0;
+    height:48px;
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:center;
+    align-items:center;
+    background:rgb(248, 248, 248);
+    border-top:1px solid rgb(255, 255, 255);
+    box-shadow:0px 15px 50px rgb(53, 53, 53);
+}
+
+
+/*Mobile and small devices*/
+@media(max-width:699px){
+    h1::first-letter{
         font-size:17pt;
+    }
+    h1{
+        font-size:16pt;
+    }
+    p{
+        font-size:12pt;
+    }
+    i{
+        font-size:2.5rem;
+        transition:2s;
+    }
+    button{
+        width:100px;
+        height:100px;
+        margin:10px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+    .bg{
+        width:80px;
+        height:80px;
+        border: 1px solid rgb(203, 203, 203);
+        border-radius:40%;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        background:radial-gradient(rgb(241, 241, 241), rgb(237, 206, 206));
+        filter:drop-shadow(0 0 5px rgba(255, 0, 195, 0.664));
+    }
+}
+
+
+/*Desktop and Large Devices*/
+@media (min-width:700px){
+    h2::first-letter{
+        font-size:19pt;
     }
     section:nth-child(3){
         height:auto;
@@ -185,15 +229,8 @@ button{
     button{
         width:120px;
         height:120px;
-        position:relative;
-        border-radius:30%;
-        background:none;
-        border:none;
-        color:purple;
         margin:10px;
-        display:flex;
-        justify-content:center;
-        align-items:center;
+        
     }
 
     .bg{
