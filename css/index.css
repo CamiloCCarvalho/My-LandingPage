@@ -28,9 +28,6 @@ ul, li, a, h1, h2, h3, p, i, button, div, section .header, .footer {
     padding:0;
     list-style:none;
 }
-h1::first-letter,h2::first-letter{
-    color:blueviolet;
-}
 
 /* 1- Layout for the page */
 .screen-index{
@@ -39,8 +36,7 @@ h1::first-letter,h2::first-letter{
     height:100%;
     display:flex;
     flex-flow:column wrap;
-    background-size:cover;
-    background-image:url(../rsc/background.jpg);
+    background-image:linear-gradient(to right, rgb(195, 0, 255), rgb(111, 0, 255));
     filter:brightness(90%);
 }
 
@@ -48,8 +44,8 @@ h1::first-letter,h2::first-letter{
 .header{
     padding:8px;
     border-radius:0 0 10% 10%;
-    background:rgb(248, 248, 248);
-    border-bottom:1px solid rgb(255, 255, 255);
+    background-image:linear-gradient(to right, rgb(195, 0, 255), rgb(111, 0, 255));
+    border-bottom:1px solid rgb(166, 2, 255);
     box-shadow:0px -15px 50px rgb(53, 53, 53);
 }
 .header-navbar{
@@ -65,7 +61,7 @@ h1::first-letter,h2::first-letter{
     padding:0 4px;
 }
 .nav-item{
-    color:rgb(18, 18, 18);
+    color:rgb(237, 237, 237);
 }
 
 /* 3- Content */
@@ -83,53 +79,6 @@ h1::first-letter,h2::first-letter{
 }
 .container:nth-child(4){
     height:400px;
-}
-.container:nth-child(4) .box{
-    height:95%;
-    width:95%;
-    display:flex;
-    flex-flow:column wrap;
-    justify-content:space-around;
-    align-items:center;
-}
-.social-btns{
-    width:80%;
-    height:70%;
-    display:flex;
-    flex-flow:row wrap;
-    justify-content:space-around;
-    align-items:center;
-    border:2px stroke purple;
-    border-radius:12px;
-    box-shadow:0 0 100px rgba(83, 83, 83, 0.2);
-    background:linear-gradient(95deg, rgb(118, 1, 220), rgb(181, 0, 194));
-}
-.social-btns a{
-    width:124px;
-    height:124px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-button{
-    width:64px;
-    height:64px;
-    font-size:24pt;
-    border-radius:30%;
-    background:none;
-    border:none;
-    color:purple;
-}
-.bg{
-    width:64px;
-    height:64px;
-    border:1px solid rgb(203, 203, 203);
-    border-radius:40%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    background:radial-gradient(rgb(241, 241, 241), rgb(237, 206, 206));
-    filter:drop-shadow(0 0 5px rgba(255, 0, 195, 0.664));
 }
 .about-content{
     margin-top:12px;
@@ -177,17 +126,29 @@ button{
 section:nth-child(3){
 	background:rgba(0, 0, 0, .1);
 }
-.contact-content{
+.social-btns{
+    width:80%;
+    height:70%;
     display:flex;
-    flex-direction:column;
+    flex-flow:row wrap;
     justify-content:space-around;
     align-items:center;
+    border:2px stroke purple;
+    border-radius:12px;
+    box-shadow:0 0 100px rgba(83, 83, 83, 0.2);
+    background:linear-gradient(95deg, rgb(118, 1, 220), rgb(181, 0, 194));
 }
-.contact-header
-i{
-    transition:2s;
+.social-btns a{
+    width:124px;
+    height:124px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 button{
+    width:64px;
+    height:64px;
+    font-size:24pt;
     position:relative;
     border-radius:30%;
     background:none;
@@ -198,6 +159,8 @@ button{
     align-items:center;
 }
 .bg{
+    width:64px;
+    height:64px;
     border: 1px solid rgb(203, 203, 203);
     border-radius:40%;
     display:flex;
@@ -206,6 +169,18 @@ button{
     background:radial-gradient(rgb(241, 241, 241), rgb(237, 206, 206));    
     filter:drop-shadow(0 0 5px rgba(255, 0, 195, 0.664));
 }
+i{
+    transition:2s;
+}
+
+.contact-content{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+}
+
+
 /* 4- Footer*/
 .footer{
     margin-bottom:0;
@@ -214,9 +189,10 @@ button{
     flex-flow:row wrap;
     justify-content:center;
     align-items:center;
-    background:rgb(248, 248, 248);
-    border-top:1px solid rgb(255, 255, 255);
+    background-image:linear-gradient(to right, rgb(195, 0, 255), rgb(111, 0, 255));
+    border-top:1px solid rgb(162, 0, 255);
     box-shadow:0px 15px 50px rgb(53, 53, 53);
+    color:rgb(235, 235, 235)
 }
 
 /* 5- Mobile and small devices*/
