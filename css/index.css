@@ -1,6 +1,6 @@
 /* 
     Document Index:
-    0. Reset Configuration 
+    0. Reset and set Configuration 
     1. Layout for the page
     
     Default All Devices: 
@@ -177,9 +177,10 @@ section:nth-child(3){
 .contact-content{
     display:flex;
     flex-direction:column;
-    justify-content:center;
+    justify-content:space-around;
     align-items:center;
 }
+.contact-header
 i{
     transition:2s;
 }
