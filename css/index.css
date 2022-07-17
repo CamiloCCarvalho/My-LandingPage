@@ -28,6 +28,9 @@ ul, li, a, h1, h2, h3, p, i, button, div, section .header, .footer {
     padding:0;
     list-style:none;
 }
+.contact-content h2{
+    color:rgb(236, 236, 236);
+}
 
 /* 1- Layout for the page */
 .screen-index{
@@ -99,7 +102,6 @@ ul, li, a, h1, h2, h3, p, i, button, div, section .header, .footer {
     flex-flow:row wrap;
     justify-content:center;
     align-items:center;
-    
     border:2px stroke purple;
     border-radius:12px;
     box-shadow:0 0 100px rgba(83, 83, 83, 0.2);
@@ -116,7 +118,6 @@ ul, li, a, h1, h2, h3, p, i, button, div, section .header, .footer {
     border-radius:12px;
     box-shadow:0 0 100px rgba(83, 83, 83, 0.2);
     background:linear-gradient(45deg, rgb(251, 251, 251), rgb(242, 242, 242));
-
 }
 .stack{
     margin:24px;
