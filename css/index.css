@@ -10,7 +10,7 @@
     3. Desktop/large Devices 
 */
 
-/* 1- Layout for the page */
+/* 0- Layout for the page */
 .screen-index{
     margin:0;
     width:100%;
@@ -22,7 +22,7 @@
     color:rgb(236, 236, 236);
 }
 
-/* 2- Content */
+/* 1- Content */
 .container{
     display:flex;
     flex-flow:column wrap;
@@ -38,6 +38,19 @@
 .container:nth-child(4){
     height:400px;
 }
+
+#about {
+    position:relative;
+    top:60px;
+    right:15vw;
+}
+.about-image {
+    border-radius:50%;
+}
+#welcome {
+    align-self:flex-end;
+    margin-right: 2vw;
+}
 .about-content{
     margin-top:12px;
     padding:12px;
@@ -48,7 +61,7 @@
     align-items:center;
     border-radius:8px;
     background:linear-gradient(45deg, rgb(251, 251, 251), rgb(242, 242, 242));
-    border:2px solid, silver;
+    border:2px solid rgb(168, 1, 245);
 }
 .stacks-content{
     margin-top:12px;
@@ -57,11 +70,10 @@
     flex-flow:row wrap;
     justify-content:center;
     align-items:center;
-    border:2px stroke purple;
+    border:2px solid purple;
     border-radius:12px;
     box-shadow:0 0 100px rgba(83, 83, 83, 0.2);
     background:linear-gradient(95deg, rgb(118, 1, 220), rgb(181, 0, 194));
-
 }
 .stacks-content:nth-child(2){
     display:flex;
@@ -76,7 +88,8 @@
 }
 .stack{
     margin:24px;
-    width:30%;
+    width:80px;
+    height:80px;
     filter:drop-shadow(0 16px 10px rgba(41, 41, 41, 0.695));
 }
 section:nth-child(3){
@@ -136,7 +149,7 @@ i{
     align-items:center;
 }
 
-/* 3- Mobile and small devices*/
+/* 2- Mobile and small devices */
 @media(max-width:699px){
     h1::first-letter{
         font-size:17pt;
@@ -179,7 +192,7 @@ i{
     .container .stacks{
         justify-content: flex-start;
         align-items: flex-start;
-        height:900px;
+        height:990px;
         margin-bottom:40px;
     }
     .social-btns{
@@ -190,7 +203,7 @@ i{
     }
 }
 
-/* 4- Desktop and Large Devices*/
+/* 3- Desktop and Large Devices */
 @media (min-width:700px){
     h2::first-letter{
         font-size:19pt;
